@@ -5,7 +5,7 @@ const pageWords = {
         color: '#eb7b7b' // Coral red for about page
     },
     experience: {
-        words: ['fullstack developer', 'software engineer', 'intern', 'developer'],
+        words: ['Brown University', 'URI', 'PPSD', 'MESA', 'Hack@URI'],
         color: '#81a6f0' // Blue to match gradient
     },
     university: {
