@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About - Terrell Osborne</title>
+        <link rel="stylesheet" href="assets/css/global.css">
+        <link rel="stylesheet" href="assets/css/about.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1 id="tK0" class="header" style="font-family: Courier, monospace;">tK0</h1>
+                <a class="nav-link" href="index.html">/about_me</a>
+                <a class="nav-link" href="pages/experience.html">/work_experience</a>
+                <a class="nav-link" href="pages/university.html">/university_activities</a>
+                <button class="contact-button">contact me!</button>
+            </nav>
+        </header>
+
+        <div class="name-container">
+            <h1>Terrell Osborne @</h1>
+        </div>
+
+        <div class="dynamic-word-container">
+            <span id="dynamic-word"></span>
+        </div>
+
+        <div class="tags">
+            <span id="programming">programmer</span>
+            <span id="student">student</span>
+            <span id="leader">leader</span>
+            <span id="engineer">engineer</span>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <span>(about me)</span>
+                <p>i'm a software engineer focused on building scalable web applications and exploring AI solutions. currently studying computer science at URI, i combine strong technical skills with leadership experience to deliver impactful projects.</p>
+            </div>
+
+            <div class="grid-item">
+                <span>(my experiences)</span>
+                <p>i've led development teams in national competitions, achieving significant user engagement improvements of 45-60%. my work spans from healthcare data science at Brown University to full-stack development at Microsoft, always focusing on scalable, user-centric solutions.</p>
+            </div>
+
+            <div class="grid-item">
+                <span>(my skills)</span>
+                <p>proficient in Python, JavaScript, HTML/CSS, and Java, with experience in both front-end and back-end development. i've worked extensively with frameworks like MERN stack and technologies including TensorFlow and OpenCV for AI applications.</p>
+            </div>
+
+            <div class="grid-item">
+                <span>(my interests)</span>
+                <p>passionate about volleyball, video creation, AI, music, and animals. i love exploring cloud computing concepts and wrestling with complex problems. always eager to learn and grow in both technical and creative domains!</p>
+            </div>
+        </div>
+
+        <div class="popup-overlay" id="popupOverlay"></div>
+        <div class="popup-card" id="popupCard">
+            <button class="close-button" id="closePopup">&times;</button>
+            <h2>Hey! I'm glad you're reaching out. Let's connect.</h2>
+            <p>You can find me on <a href="https://linkedin.com/in/terrell-osborne" target="_blank">LinkedIn</a> and <a href="https://github.com/Marooncoloredchair" target="_blank">GitHub</a>, or you could <a href="mailto:terrell_osborne@uri.edu">shoot me an email</a>!</p>
+        </div>
+
+        <script src="assets/js/script.js"></script>
+        <script>
+            const contactButton = document.querySelector('.contact-button');
+            const popupCard = document.getElementById('popupCard');
+            const popupOverlay = document.getElementById('popupOverlay');
+            const closeButton = document.getElementById('closePopup');
+
+            contactButton.addEventListener('click', () => {
+                popupCard.style.display = 'block';
+                popupOverlay.style.display = 'block';
+            });
+
+            closeButton.addEventListener('click', () => {
+                popupCard.style.display = 'none';
+                popupOverlay.style.display = 'none';
+            });
+
+            popupOverlay.addEventListener('click', () => {
+                popupCard.style.display = 'none';
+                popupOverlay.style.display = 'none';
+            });
+        </script>
+    </body>
+</html>

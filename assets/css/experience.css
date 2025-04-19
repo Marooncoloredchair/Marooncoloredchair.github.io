@@ -1,0 +1,153 @@
+/* Experience Page Styles */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-left: 40px; /* Added to shift content slightly right */
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-title {
+    font-size: 4.5rem;
+    color: #444444;
+    font-weight: 600;
+    margin-bottom: 40px;
+    line-height: 1.1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-title #dynamic-word {
+    color: #81a6f0;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: inherit !important;
+}
+
+/* Introduction Grid */
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin-bottom: 24px;
+}
+
+.intro-text {
+    color: #666666;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    margin: 0;
+    display: inline;
+}
+
+.label {
+    color: #666666;
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    margin-top: -8px;
+}
+
+.year-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.year {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    color: #444444;
+    width: fit-content;
+    font-weight: 500;
+}
+
+.year-block:nth-child(1) .year {
+    background-color: #d7f8ff;  /* Mint blue */
+}
+
+.year-block:nth-child(2) .year {
+    background-color: #cff0f9;  /* Muted mauve */
+}
+
+.year-block:nth-child(3) .year {
+    background-color: #c2e1dc;  /* Sage green */
+}
+
+.year-block:nth-child(4) .year {
+    background-color: #e3d5d7;  /* Dusty rose */
+}
+
+.job {
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.job:last-child {
+    margin-bottom: 0;
+}
+
+.job h3 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #444444;
+    margin-bottom: 4px;
+    padding-right: 120px; /* Make room for the date */
+}
+
+.period {
+    color: #444444;
+    font-size: 0.85rem;
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+
+.job p {
+    color: #666666;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    margin: 0;
+    max-width: 650px;
+    font-weight: 400;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+    .content {
+        padding: 60px 24px 40px;
+    }
+
+    .main-title {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+
+    .job p {
+        max-width: 100%;
+    }
+
+    .job h3 {
+        padding-right: 0;
+        margin-bottom: 2px;
+    }
+
+    .period {
+        position: static;
+        display: block;
+        margin-bottom: 6px;
+    }
+} 

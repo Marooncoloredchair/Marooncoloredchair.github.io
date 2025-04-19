@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>University Activities - Terrell Osborne</title>
+        <link rel="stylesheet" href="../assets/css/global.css">
+        <link rel="stylesheet" href="../assets/css/university.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1 id="tK0" class="header" style="font-family: Courier, monospace;">tK0</h1>
+                <a class="nav-link" href="../index.html">/about_me</a>
+                <a class="nav-link" href="experience.html">/work_experience</a>
+                <a class="nav-link" href="university.html">/university_activities</a>
+                <button class="contact-button">contact me!</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <h1 class="main-title">school activities @<span id="dynamic-word"></span></h1>
+
+            <div class="intro-grid">
+                <p class="intro-text">
+                    <span class="label">(activities)</span>i serve in several leadership roles at the University of Rhode Island, including School Body President where i've increased student engagement by 30% and organized events for 400+ students.
+                </p>
+                <p class="intro-text">
+                    <span class="label">(projects)</span>i'm passionate about combining technology with education and community impact. my projects range from ASL recognition systems to full-stack web applications, always focusing on practical solutions.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="year-block">
+                    <span class="year">2024</span>
+                    <div class="job">
+                        <h3>School Body President</h3>
+                        <span class="period">2023 - Present</span>
+                        <p>Raised school engagement by 30% through innovative programs and initiatives. Successfully organized and executed events for over 400 students, fostering a more connected campus community.</p>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <span class="year">2023</span>
+                    <div class="job">
+                        <h3>School District Equity Leader</h3>
+                        <span class="period">2022 - Present</span>
+                        <p>Managing a dedicated team building projects focused on educational equity. Implementing initiatives to ensure equal access to resources and opportunities for all students.</p>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <span class="year">2022</span>
+                    <div class="job">
+                        <h3>Computer Science Mentor</h3>
+                        <span class="period">2022 - 2023</span>
+                        <p>Helped 20+ underclassmen with assigned CS projects, fostering their growth in programming and problem-solving skills. Created a supportive learning environment for future developers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Personal Portfolio with Blog</h3>
+                    <p>Developed a full-stack web application using HTML, CSS, JavaScript, and MERN stack. Deployed on Heroku/Vercel with GitHub for version control.</p>
+                    <div class="tech-stack">
+                        <span class="tech">MERN Stack</span>
+                        <span class="tech">REST API</span>
+                        <span class="tech">React</span>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <h3>ASL Hand Sign Recognition System</h3>
+                    <p>Built a real-time ASL letter recognition system using Python, TensorFlow, and OpenCV. Implemented enhanced preprocessing and data augmentation techniques for improved accuracy.</p>
+                    <div class="tech-stack">
+                        <span class="tech">Python</span>
+                        <span class="tech">TensorFlow</span>
+                        <span class="tech">OpenCV</span>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <h3>YouTube Channel Management</h3>
+                    <p>Running an active YouTube channel and Discord community with over 5000 subscribers. Creating engaging content and managing a vibrant online community.</p>
+                    <div class="tech-stack">
+                        <span class="tech">Content Creation</span>
+                        <span class="tech">Community Management</span>
+                        <span class="tech">Social Media</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-overlay" id="popupOverlay"></div>
+        <div class="popup-card" id="popupCard">
+            <button class="close-button" id="closePopup">&times;</button>
+            <h2>Hey! I'm glad you're reaching out. Let's connect.</h2>
+            <p>You can find me on <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a> and <a href="https://github.com/your-profile" target="_blank">GitHub</a>, or you could <a href="mailto:your.email@example.com">shoot me an email</a>!</p>
+        </div>
+
+        <script src="../assets/js/script.js"></script>
+        <script>
+            const contactButton = document.querySelector('.contact-button');
+            const popupCard = document.getElementById('popupCard');
+            const popupOverlay = document.getElementById('popupOverlay');
+            const closeButton = document.getElementById('closePopup');
+
+            contactButton.addEventListener('click', () => {
+                popupCard.style.display = 'block';
+                popupOverlay.style.display = 'block';
+            });
+
+            closeButton.addEventListener('click', () => {
+                popupCard.style.display = 'none';
+                popupOverlay.style.display = 'none';
+            });
+
+            popupOverlay.addEventListener('click', () => {
+                popupCard.style.display = 'none';
+                popupOverlay.style.display = 'none';
+            });
+        </script>
+    </body>
+</html> 
