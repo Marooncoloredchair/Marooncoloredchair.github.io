@@ -1,5 +1,23 @@
+# System files
 .DS_Store
-node_modules/
-.env
+Thumbs.db
+
+# IDE files
 .vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules if you add them later
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.local
+
 *.log 
