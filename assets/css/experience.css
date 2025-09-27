@@ -85,6 +85,10 @@
     background-color: #e3d5d7;  /* Dusty rose */
 }
 
+.year-block:nth-child(5) .year {
+    background-color: #f0e6d2;  /* Warm beige */
+}
+
 .job {
     margin-bottom: 12px;
     position: relative;
@@ -120,6 +124,49 @@
     font-weight: 400;
 }
 
+/* Projects Section */
+.projects-section {
+    margin-top: 60px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #444444;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    margin-bottom: 40px;
+}
+
+.project {
+    background-color: #f8f9fa;
+    padding: 24px;
+    border-radius: 12px;
+    border-left: 4px solid #81a6f0;
+}
+
+.project h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #444444;
+    margin-bottom: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.project p {
+    color: #666666;
+    line-height: 1.6;
+    font-size: 0.9rem;
+    margin: 0;
+    font-weight: 400;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 992px) {
     .content {
@@ -149,5 +196,15 @@
         position: static;
         display: block;
         margin-bottom: 6px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
     }
 } 

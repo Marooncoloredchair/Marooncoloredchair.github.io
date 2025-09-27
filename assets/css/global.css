@@ -30,7 +30,7 @@ body {
 
 nav {
     position: fixed;
-    top: 40px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -39,15 +39,18 @@ nav {
     background: white;
     padding: 10px 20px;
     border-radius: 30px;
+    border: 3px solid #444444;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
 }
 
 .header {
     font-size: 20px;
-    margin-right: 20px;
     color: #444444;
     text-decoration: none;
+    font-weight: bold;
 }
+
 
 .nav-link {
     color: #444444;
@@ -59,11 +62,13 @@ nav {
 }
 
 .contact-button {
-    background: none;
+    background: white;
     border: 2px solid #444444;
     padding: 8px 16px;
     border-radius: 20px;
     cursor: pointer;
+    color: #444444;
+    font-size: 14px;
 }
 
 /* Footer Styles */
